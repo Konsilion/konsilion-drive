@@ -29,10 +29,10 @@ ollama pull bge-m3 || true
 cat >/root/LightRAG-70B-q5KM.Modelfile <<'EOF'
 FROM llama3.3:70b-instruct-q5_K_M
 SYSTEM """
-Tu es un extracteur d'entites et de relations. Tu dois produire EXCLUSIVEMENT du JSON valide.
+Tu es un extracteur d'entites et de relations.
 Role: extraire des triples {head, relation, tail, evidence} et dedupliquer.
 Regles:
-- Pas d'explication, pas de texte hors JSON.
+- Pas d'explication, sur ton raisonnement uniquement les résultats.
 - "evidence" est un court extrait exact du texte source (<= 300 caracteres).
 - Utiliser des intitules concis et normalises.
 """
