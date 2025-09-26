@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export OLLAMA_HOST=${OLLAMA_HOST:-0.0.0.0:11434}
-export OLLAMA_ORIGINS=${OLLAMA_ORIGINS:-*}
-
 # 1) Installer Ollama si absent
 if ! command -v ollama >/dev/null 2>&1; then
   apt-get update -y
@@ -49,14 +46,3 @@ curl -s http://127.0.0.1:11434/api/generate -d '{"model":"lightrag-70b","prompt"
 
 # 6) Persistance des variables pour les prochains process
 env >> /etc/environment || true
-
-# 7) S’assurer qu’au prochain redémarrage, ça repart (onstart.sh)
-cat >onstart.sh <<'EOS'
-#!/usr/bin/env bash
-set -euo pipefail
-export OLLAMA_HOST=${OLLAMA_HOST:-0.0.0.0:11434}
-export OLLAMA_ORIGINS=${OLLAMA_ORIGINS:-*}
-pkill -f "ollama serve" >/dev/null 2>&1 || true
-nohup ollama serve >/var/log/ollama.log 2>&1 &
-EOS
-chmod +x onstart.sh
