@@ -39,7 +39,6 @@ Regles:
 PARAMETER num_ctx 131072
 PARAMETER temperature 0.2
 PARAMETER top_p 0.9
-PARAMETER format json
 EOF
 
 ollama rm lightrag-70b >/dev/null 2>&1 || true
