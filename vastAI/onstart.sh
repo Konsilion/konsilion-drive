@@ -23,12 +23,11 @@ for i in {1..40}; do
 done
 
 # 4) Pulls et création de ton modèle (facultatif ici si déjà fait)
-# ollama pull llama3.3:70b-instruct-q5_K_M || true
-ollama pull mistral-nemo:12b || true
+ollama pull llama3.3:70b-instruct-q5_K_M || true
 ollama pull bge-m3 || true
 
 cat >/root/LightRAG-70B-q5KM.Modelfile <<'EOF'
-FROM mistral-nemo:12b
+FROM llama3.3:70b-instruct-q5_K_M
 SYSTEM """
 Tu es un extracteur d'entites et de relations.
 Role: extraire des triples {head, relation, tail, evidence} et dedupliquer.
