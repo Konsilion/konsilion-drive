@@ -52,7 +52,7 @@ curl -s http://127.0.0.1:11434/api/generate -d '{"model":"lightrag-70b","prompt"
 env >> /etc/environment || true
 
 # 7) S’assurer qu’au prochain redémarrage, ça repart (onstart.sh)
-cat >/root/onstart.sh <<'EOS'
+cat >onstart.sh <<'EOS'
 #!/usr/bin/env bash
 set -euo pipefail
 export OLLAMA_HOST=${OLLAMA_HOST:-0.0.0.0:11434}
@@ -60,4 +60,4 @@ export OLLAMA_ORIGINS=${OLLAMA_ORIGINS:-*}
 pkill -f "ollama serve" >/dev/null 2>&1 || true
 nohup ollama serve >/var/log/ollama.log 2>&1 &
 EOS
-chmod +x /root/onstart.sh
+chmod +x onstart.sh
