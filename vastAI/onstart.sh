@@ -33,7 +33,7 @@ Regles:
 - "evidence" est un court extrait exact du texte source (<= 300 caracteres).
 - Utiliser des intitules concis et normalises.
 """
-PARAMETER num_ctx 8192
+PARAMETER num_ctx 16384
 PARAMETER temperature 0.2
 PARAMETER top_p 0.9
 EOF
@@ -43,6 +43,9 @@ OLLAMA_DEBUG=1 ollama create lightrag-70b -f /root/LightRAG-70B-q5KM.Modelfile |
 
 # 5) Pré-warm (optionnel)
 curl -s http://127.0.0.1:11434/api/generate -d '{"model":"lightrag-70b","prompt":"Hello","stream":false}' >/dev/null 2>&1 || true
+
+
+
 
 # 6) Persistance des variables pour les prochains process
 env >> /etc/environment || true
