@@ -33,7 +33,7 @@ Regles:
 - "evidence" est un court extrait exact du texte source (<= 300 caracteres).
 - Utiliser des intitules concis et normalises.
 """
-PARAMETER num_ctx 131072
+PARAMETER num_ctx 8192
 PARAMETER temperature 0.2
 PARAMETER top_p 0.9
 EOF
