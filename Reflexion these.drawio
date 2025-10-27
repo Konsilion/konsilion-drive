@@ -1,9 +1,51 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
   <diagram name="Page-1" id="hkf__0UJ-rFhPB0LiTKS">
-    <mxGraphModel dx="1554" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1636" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-1" target="uz-wZKXDxPcc2NML6rjB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-1" value="Service climatique" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-2" target="uz-wZKXDxPcc2NML6rjB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-2" value="Information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-4" target="uz-wZKXDxPcc2NML6rjB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-4" value="Ontologie" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="1710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-5" target="uz-wZKXDxPcc2NML6rjB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-5" target="uz-wZKXDxPcc2NML6rjB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-5" value="Modélisation des connaissances" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uz-wZKXDxPcc2NML6rjB-6" target="uz-wZKXDxPcc2NML6rjB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-6" value="Décision" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-7" value="Connaissances utilisées lors de la décision" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2760" y="1600" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Ontologie&lt;/h1&gt;&lt;p&gt;Comment &quot;mettre en primitive&quot; les connaissances ? C&#39;est à dire décider quels sont les concepts et les relations et quelle notion représentent-ils ?&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="1790" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uz-wZKXDxPcc2NML6rjB-14" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Graphe de connaissance&lt;/h1&gt;&lt;p&gt;Comment &quot;mettre en primitive&quot; les connaissances ? C&#39;est à dire décider quels sont les concepts et les relations et quelle notion représentent-ils ?&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1790" width="300" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
